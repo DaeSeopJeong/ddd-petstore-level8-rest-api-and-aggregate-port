@@ -8,8 +8,10 @@ import org.springframework.beans.BeanUtils;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.PostPersist;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "cat")
 @DiscriminatorValue("cat")
 public class Cat extends Pet implements Groomable, Runnable{
 

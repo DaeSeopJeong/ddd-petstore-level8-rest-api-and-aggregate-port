@@ -2,7 +2,6 @@ server:
   port: 8081
 
 ---
-
 spring:
   profiles: default
   jpa:
@@ -10,3 +9,4 @@ spring:
       hibernate:
         show_sql: true
         format_sql: true
+
